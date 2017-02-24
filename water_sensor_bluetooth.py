@@ -53,6 +53,7 @@ try:
 				print "KILL"
 			elif data_received == 'e':
 				print "EXE"
+			data_received = 'n'
 		except BluetoothError as e:
 			#print e
 			x = 1

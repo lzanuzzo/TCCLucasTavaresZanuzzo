@@ -65,6 +65,7 @@ try:
 					mysqlErrorHandler(e,db,pi)
 			elif data_received == 'e':
 				print "EXE"
+<<<<<<< HEAD
 				try:
 					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
 					reading = cursorDB.fetchone()
@@ -74,6 +75,9 @@ try:
 				except Exception as e:
 					print "\nError trying to connect to acces the last line at historical"
 					mysqlErrorHandler(e,db,pi)
+=======
+			data_received = 'n'
+>>>>>>> b5b1f58f083ed3b10e39bbcc35d0a936b6f8cebf
 		except BluetoothError as e:
 			#print e
 			x = 1

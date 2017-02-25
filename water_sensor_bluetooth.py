@@ -51,8 +51,29 @@ try:
 			data_received = client_sock.recv(1024)
 			if data_received == 'k':
 				print "KILL"
+				# Verifica a ultima leitura. se a tabela está vazia ou se a leitura ainda nao acabou
+				try:
+					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
+					reading = cursorDB.fetchone()
+					print reading
+					if reading is None:
+						print "Não há leitura para terminar.."
+					else:
+						os.system("sudo kill -10 {}".format(reading[0]))
+				except Exception as e:
+					print "\nError trying to connect to acces the last line at historical"
+					mysqlErrorHandler(e,db,pi)
 			elif data_received == 'e':
 				print "EXE"
+				try:
+					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
+					reading = cursorDB.fetchone()
+					print reading
+					if reading is None:
+						os.system("sudo nice -20 python sensor_water_db.py > log_exec.txt &")
+				except Exception as e:
+					print "\nError trying to connect to acces the last line at historical"
+					mysqlErrorHandler(e,db,pi)
 		except BluetoothError as e:
 			#print e
 			x = 1

@@ -3,39 +3,41 @@
 import time
 import sys
 import os
+from datetime import datetime
 import bluetooth
 from bluetooth import *
 import MySQLdb
 from useful import *
 import signal
+import logging
+
+logging.basicConfig(filename='water_sensor_bluetooth_log.log',level=logging.DEBUG)
+logging.info('----------------------------------------------------------------------------')
+logging.info('Starting the script in UTC: '+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
 # ------------------------------------------------------
 # Conexao bluetooth
-server_sock=BluetoothSocket( RFCOMM )
-server_sock.bind(("",PORT_ANY))
-server_sock.listen(1)
-
-port = server_sock.getsockname()[1]
-
-uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
-
-advertise_service( server_sock, "SampleServer",
-                   service_id = uuid,
-                   service_classes = [ uuid, SERIAL_PORT_CLASS ],
-                   profiles = [ SERIAL_PORT_PROFILE ], 
- #                  protocols = [ OBEX_UUID ] 
-                    )
-print("Waiting for connection on RFCOMM channel %d" % port)
-client_sock, client_info = server_sock.accept()
-client_sock.settimeout(0.9)
-print("Accepted connection from ", client_info)
+server_sock,port = bluetoothConnection() 
+#port[1] = avaible port
+#port[0] = device
+logging.info("Waiting for connection on RFCOMM channel %d" % port[1])
+try:
+	client_sock, client_info = server_sock.accept() #Server accepts connection request from a client; client_socket is the socket used for communication with client and address the client's address.
+except KeyboardInterrupt:
+	logging.info("Interrupting script during bluetooth connection acceptance")
+	logging.warn('Finishing the script...UTC:'+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
+	stop_advertising(server_sock)
+	exit()
+client_sock.settimeout(0.9) #Timeout waiting for a client data
+logging.info("Accepted connection from {}".format(client_info))
 # ------------------------------------------------------
 # Conexao no banco
 try:
 	db = MySQLdb.connect("localhost", "wiki", "eeyrfxfe", "WATER_SENSOR")
 	cursorDB = db.cursor()
 except Exception as e:
-	print "\nError trying to connect to database"
-	mysqlErrorHandler(e,db,pi)
+	logging.error('Error trying to connect to database')
+	mysqlErrorHandler(e,db,pi,logging)
+logging.info("Connected to MySQL database")
 # --------------------------------------------------------
 #Funcao para poder dar kill e finalizar corretamente o script
 stop = False
@@ -44,42 +46,52 @@ def handler(number, frame):
 	stop = True
 signal.signal(signal.SIGUSR1, handler)
 # --------------------------------------------------------
+logging.info("Starting the loop...")
 try:
     while True:
-    	
+    	# the loop countdown stay in bluetooth acepptance rate
 		try:
 			data_received = client_sock.recv(1024)
 			if data_received == 'k':
-				print "KILL"
+				logging.info('Command to kill the read process')
 				# Verifica a ultima leitura. se a tabela está vazia ou se a leitura ainda nao acabou
 				try:
 					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
 					reading = cursorDB.fetchone()
-					print reading
+					logging.info("Last read get from MySQL database: {} ".format(reading))
 					if reading is None:
-						print "Não há leitura para terminar.."
+						logging.info("There is no read to finish...")
 					else:
 						os.system("sudo kill -10 {}".format(reading[0]))
+						logging.info('Killing the process with pid: {}'.format(reading[0]))
 				except Exception as e:
-					print "\nError trying to connect to acces the last line at historical"
-					mysqlErrorHandler(e,db,pi)
+					logging.info("Error trying to connect to access the last line at historical")
+					mysqlErrorHandler(e,db,pi,logging)
 			elif data_received == 'e':
-				print "EXE"
-<<<<<<< HEAD
+				logging.info("Command to begin a read")
 				try:
 					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
 					reading = cursorDB.fetchone()
-					print reading
+					logging.info("Last read get from MySQL database: {} ".format(reading))
 					if reading is None:
 						os.system("sudo nice -20 python sensor_water_db.py > log_exec.txt &")
+						logging.info("Starting a new process to read")
 				except Exception as e:
-					print "\nError trying to connect to acces the last line at historical"
-					mysqlErrorHandler(e,db,pi)
-=======
-			data_received = 'n'
->>>>>>> b5b1f58f083ed3b10e39bbcc35d0a936b6f8cebf
-		except BluetoothError as e:
-			#print e
+					logging.info("Error trying to connect to access the last line at historical")
+					mysqlErrorHandler(e,db,pi,logging)
+			elif data_received == 'h':
+				logging.info("Command to begin a read")
+				try:
+					cursorDB.execute ("SELECT * FROM read_historical")
+					reading = cursorDB.fetchall()
+					print reading
+					logging.info("Get all historical from MySQL database")
+				except Exception as e:
+					logging.info("Error trying to connect to access the historical")
+					mysqlErrorHandler(e,db,pi,logging)	
+		except bluetooth.btcommon.BluetoothError as error:
+			#logging.error("Bluetooth Error: {}".format(error))
+			# Timeout catcher
 			x = 1
 
 		try:
@@ -90,30 +102,40 @@ try:
 			data_to_send = "{};{};{}\r\n".format(reading[0],reading[1],reading[2])
 
 		except Exception as e:
-			print "Error trying to read the DB"
+			logging.info("Error trying to read the DB, to send on time data")
+			logging.error("MySQL Error: {}".format(str(e)))
+			logging.warn("Database rollback")
 			db.rollback()
 
 		try:
 			client_sock.send(data_to_send)
 		
 		except bluetooth.btcommon.BluetoothError as error:
-			print "Could not connect: ", error, "; Retrying..."
+			logging.warn("Could not connect: {}; Retrying...".format(error))
+			#server_sock, port = bluetoothConnection()
 			client_sock, client_info = server_sock.accept()
+			client_sock.settimeout(0.9)
+			logging.info("Accepted connection from {}".format(client_info))
 			
-		#time.sleep(0.9)
 		if stop:
+			logging.warn('Breaking the loop!')
 			break
 
 
 except KeyboardInterrupt:
-    pass
+	logging.warn('Breaking the loop!')
+	pass
 # ------------------------------------------------------
-print("disconnected")
+logging.warn("Database rollback")
 db.rollback()
+logging.warn('Database close connection')	
 db.close()	
+logging.warn('Bluetooth socket stop advertising')	
+stop_advertising(server_sock)
+logging.warn('Bluetooth client socket close')	
 client_sock.close()
+logging.warn('Bluetooth server socket close')	
 server_sock.close()
-print("all done")
+logging.warn('Finishing the script...UTC:'+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
 # -----------------------------------------------------
-# Iniciando e esperando uma conexão bluetooth
 

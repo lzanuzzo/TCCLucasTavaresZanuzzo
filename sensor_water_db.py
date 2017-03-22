@@ -8,32 +8,38 @@ import dateutil.relativedelta
 import os
 import MySQLdb
 import signal
+import logging
 from useful import *
 
+logging.basicConfig(filename='sensor_water_db_log.log',level=logging.DEBUG)
+logging.info('----------------------------------------------------------------------------')
+logging.info('Starting the script in UTC: '+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
 
-
-print '\nIniciando o script em UTC: '+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
 pid = os.getpid()
 # -----------------------------------------------------
 # Pino do sinal do sensor
 FLOW_SENSOR = 2
+logging.info("Flow sensor at PIN: {} ".format(FLOW_SENSOR))
 # ------------------------------------------------------
 # Config da biblioteca dos GPIO
+
 pi = pigpio.pi()
 pigpio.exceptions = True
 if not pi.connected:
-   print('\nError trying to connect to PIGPIO lib')
+   logging.error('Error trying to connect to PIGPIO lib')
    exit()
 pi.set_mode(FLOW_SENSOR, pigpio.INPUT)  
 pi.set_pull_up_down(FLOW_SENSOR, pigpio.PUD_UP)
+logging.info('PIGPIO configured')
 # ------------------------------------------------------
 # Conexao no banco
 try:
 	db = MySQLdb.connect("localhost", "wiki", "eeyrfxfe", "WATER_SENSOR")
 	cursorDB = db.cursor()
 except Exception as e:
-	print "\nError trying to connect to database"
-	mysqlErrorHandler(e,db,pi)
+	logging.error('Error trying to connect to database')
+	mysqlErrorHandler(e,db,pi,logging)
+logging.info("Connected to MySQL database")
 # ------------------------------------------------------
 # Verifica a ultima leitura. se a tabela está vazia ou se a leitura ainda nao acabou
 try:
@@ -41,8 +47,9 @@ try:
 	reading = cursorDB.fetchone()
 	print reading
 except Exception as e:
-	print "\nError trying to connect to acces the last line at historical"
-	mysqlErrorHandler(e,db,pi)
+	logging.error("Error trying to connect to acces the last line at historical")
+	mysqlErrorHandler(e,db,pi,logging)
+logging.info("Last read get from MySQL database: {} ".format(reading))
 # ------------------------------------------------------
 # Situacao onde nao existe nada no historico
 if reading is None:
@@ -54,8 +61,9 @@ if reading is None:
 		reading = cursorDB.fetchone()
 		atual_read_id = reading[0]
 	except Exception as e:
-		print "\nError trying to insert the first row at historical table."
-		mysqlErrorHandler(e,db,pi)
+		logging.error("Error trying to insert the first row at historical table.")
+		mysqlErrorHandler(e,db,pi,logging)
+	logging.info("First read at historical insert, id: {}".format(atual_read_id))
 # ------------------------------------------------------
 # Situacao onde existe uma leitura inacabada
 elif reading is not None and reading[2] is None:
@@ -69,8 +77,9 @@ elif reading is not None and reading[2] is None:
 			total_liters = reading[0]
 		else: total_liters = 0
 	except Exception as e:
-		print "\nError trying to read last amount of liters read"
-		mysqlErrorHandler(e,db,pi)
+		logging.error("Error trying to read last amount of liters read")
+		mysqlErrorHandler(e,db,pi,logging)
+	logging.info("Not finished read at historical, continue reading, read id: {}".format(atual_read_id))
 # ------------------------------------------------------
 # Situacao onde existe uma leitura finalizada
 elif reading[2] is not None and reading[5] is not None:
@@ -82,8 +91,9 @@ elif reading[2] is not None and reading[5] is not None:
 		reading = cursorDB.fetchone()
 		atual_read_id = reading[0]
 	except Exception as e:
-		print "\nError trying to insert the next read row at historical table."
-		mysqlErrorHandler(e,db,pi)
+		logging.error("Error trying to insert the next read row at historical table.")
+		mysqlErrorHandler(e,db,pi,logging)
+	logging.info("New read started!, pid: {}".format(atual_read_id))
 # --------------------------------------------------------
 #Funcao para poder dar kill e finalizar corretamente o script
 stop = False
@@ -108,6 +118,7 @@ ml_in_pulse = float(1000)/450
 count = 0
 start_time = time.time()
 # --------------------------------------------------------
+logging.info("Starting the loop...")
 try:
 	while True:
 		# Pulsos por litro: 450
@@ -125,8 +136,8 @@ try:
 				cursorDB.execute("INSERT INTO sensor_data values (UNIX_TIMESTAMP(),{},{})".format(flow,total_liters));	
 				db.commit()
 			except Exception as e:
-				print "Error trying to insert sensor read data"
-				mysqlErrorHandler(e,db,pi)
+				logging.error("Error trying to insert sensor read data")
+				mysqlErrorHandler(e,db,pi,logging)
 			
 			count = 0
 			tdelta = 0
@@ -134,20 +145,25 @@ try:
 			callback = pi.callback(FLOW_SENSOR, pigpio.RISING_EDGE, callback_func)
 
 		if stop:
+			logging.warn('Breaking the loop!')
 			break
 
 except KeyboardInterrupt:
-	print '\nFinalizando o script...UTC:'+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-# ----------------------------------------------------------
+	logging.warn('Breaking the loop!')
+# ---------------------------------------------------------
 # Salvando no banco o tanto de litros e a data desse script
 try:
 	cursorDB.execute("UPDATE read_historical SET unix_end=UNIX_TIMESTAMP(), end_date=NOW(), liters={} WHERE id={} ".format(total_liters,atual_read_id));	
 	db.commit()
 except Exception as e:
-	print "Error trying to finish the read"
-	mysqlErrorHandler(e,db,pi)
+	logging.error("Error trying to finish the read")
+	mysqlErrorHandler(e,db,pi,logging)
 # ----------------------------------------------------------
 db.rollback()
-db.close()		
+logging.warn('Database rollback')
+db.close()
+logging.warn('Database close connection')		
 pi.stop()
+logging.warn('PIGPIO stop')
 # ----------------------------------------------------------
+logging.warn('Finishing the script...UTC:'+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))

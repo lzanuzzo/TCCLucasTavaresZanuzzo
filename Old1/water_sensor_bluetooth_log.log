@@ -1,0 +1,118 @@
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-19 16:41:45
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (4987L,) 
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (4987L,) 
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (4987L,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (4987L,) 
+INFO:root:Killing the process with pid: 4987
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (5013L,) 
+INFO:root:Killing the process with pid: 5013
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (5054L,) 
+INFO:root:Killing the process with pid: 5054
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-19 16:50:12
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-19 22:08:10
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Error trying to read the DB, to send on time data
+ERROR:root:MySQL Error: (2006, 'MySQL server has gone away')
+WARNING:root:Database rollback
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-21 21:23:20
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (22580L,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (22580L,) 
+INFO:root:Killing the process with pid: 22580
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (22651L,) 
+INFO:root:Killing the process with pid: 22651
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: None 
+INFO:root:There is no read to finish...
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (22687L,) 
+INFO:root:Killing the process with pid: 22687
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-22 01:51:14
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin a read
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-22 01:52:36

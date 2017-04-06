@@ -1,0 +1,278 @@
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 02:26:11
+INFO:root:Flow sensor at PIN: 2 
+ERROR:root:Error trying to connect to PIGPIO lib
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 02:26:20
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 0
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 02:26:25
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 02:26:33
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 0
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 02:26:37
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 02:43:40
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 0
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 02:43:41
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:08:47
+INFO:root:Flow sensor at PIN: 2 
+ERROR:root:Error trying to connect to PIGPIO lib
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:08:56
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 188
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:09:32
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:09:50
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 204
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:10:16
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:16:42
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 226
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:17:01
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:17:20
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 210
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:17:39
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:17:52
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 227
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:18:07
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:18:22
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 235
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:18:39
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:19:50
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 65
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:20:16
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:20:32
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 206
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:20:59
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:21:13
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 207
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:21:34
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:21:45
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 107
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:21:57
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:22:09
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 220
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:22:28
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:22:45
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 201
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:23:02
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:23:39
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 183
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:24:04
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:24:35
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 201
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:24:56
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:25:23
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 110
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:25:42
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:25:55
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 205
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:26:16
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:26:29
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 200
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:26:44
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:27:04
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 203
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:27:31
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:29:35
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 200
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:29:55
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:29:57
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 127
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:30:20
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:31:07
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 148
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:31:31
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:31:44
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 199
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:32:08
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:32:28
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 187
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:32:57
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:33:32
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 102
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:33:53
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:35:05
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 197
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:35:29
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:35:43
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 202
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:36:10
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-23 22:36:39
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Begin loop
+INFO:root:Pulses: 197
+WARNING:root:Breaking the loop!
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-23 22:37:09

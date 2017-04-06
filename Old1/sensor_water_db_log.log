@@ -1,0 +1,79 @@
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-19 16:42:16
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (40L, 1489941413.0, 1489941419.0, 0.0, datetime.datetime(2017, 3, 19, 13, 36, 53), datetime.datetime(2017, 3, 19, 13, 36, 59), 4908L) 
+INFO:root:New read started!, pid: 41
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-19 16:44:23
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-19 16:44:27
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (41L, 1489941737.0, 1489941863.0, 0.0, datetime.datetime(2017, 3, 19, 13, 42, 17), datetime.datetime(2017, 3, 19, 13, 44, 23), 4987L) 
+INFO:root:New read started!, pid: 42
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-19 16:49:39
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-19 16:49:42
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (42L, 1489941867.0, 1489942179.0, 0.0, datetime.datetime(2017, 3, 19, 13, 44, 27), datetime.datetime(2017, 3, 19, 13, 49, 39), 5013L) 
+INFO:root:New read started!, pid: 43
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-19 16:49:48
+
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-21 21:37:46
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (43L, 1489942182.0, 1489942188.0, 0.0, datetime.datetime(2017, 3, 19, 13, 49, 42), datetime.datetime(2017, 3, 19, 13, 49, 48), 5054L) 
+INFO:root:New read started!, pid: 44
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-21 21:42:39
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-21 21:42:45
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (44L, 1490132266.0, 1490132559.0, 0.0, datetime.datetime(2017, 3, 21, 18, 37, 46), datetime.datetime(2017, 3, 21, 18, 42, 39), 22580L) 
+INFO:root:New read started!, pid: 45
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-21 21:45:56
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-21 21:48:31
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (45L, 1490132565.0, 1490132756.0, 0.0, datetime.datetime(2017, 3, 21, 18, 42, 45), datetime.datetime(2017, 3, 21, 18, 45, 56), 22651L) 
+INFO:root:New read started!, pid: 46
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-03-21 21:48:34

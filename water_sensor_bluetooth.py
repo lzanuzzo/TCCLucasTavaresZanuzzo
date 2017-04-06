@@ -11,6 +11,7 @@ from useful import *
 import signal
 import logging
 
+
 logging.basicConfig(filename='water_sensor_bluetooth_log.log',level=logging.DEBUG)
 logging.info('----------------------------------------------------------------------------')
 logging.info('Starting the script in UTC: '+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
@@ -36,7 +37,7 @@ try:
 	cursorDB = db.cursor()
 except Exception as e:
 	logging.error('Error trying to connect to database')
-	mysqlErrorHandler(e,db,pi,logging)
+	mysqlErrorHandler_bt(e,db,logging)
 logging.info("Connected to MySQL database")
 # --------------------------------------------------------
 #Funcao para poder dar kill e finalizar corretamente o script
@@ -47,12 +48,42 @@ def handler(number, frame):
 signal.signal(signal.SIGUSR1, handler)
 # --------------------------------------------------------
 logging.info("Starting the loop...")
+# Flags for each type of stream data
+historic_loop 	= False;
+chart_loop		= False;
+read_loop 		= True;
+# Countdown to receive data for each type of stream
+historic_loop_countdown = 0.1
+chart_loop_countdown 	= 0.1
+read_loop_countdown 	= 0.9
+# Initialize the list with historical and chart data
+all_historical_data = []
+all_chart_data		= []
+count_for_lists 	= 0
+# Main loop
+# --------------------------------------------------------
 try:
     while True:
     	# the loop countdown stay in bluetooth acepptance rate
 		try:
 			data_received = client_sock.recv(1024)
-			if data_received == 'k':
+			if ':' in data_received:
+				data_received_with_id, id_read = data_received.split(":")
+			else: 
+				data_received_with_id = ''
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to retake sensor reader routine
+			if data_received == 'r':
+				logging.info('Command to begin the read loop')
+				logging.info("Setting timeout from socket to {} and setting read loop flag".format(read_loop_countdown))
+				count_for_lists = 0
+				historic_loop = False
+				read_loop = True
+				chart_loop = False
+				client_sock.settimeout(read_loop_countdown)
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to kill sensor reader script
+			elif data_received == 'k':
 				logging.info('Command to kill the read process')
 				# Verifica a ultima leitura. se a tabela está vazia ou se a leitura ainda nao acabou
 				try:
@@ -66,7 +97,9 @@ try:
 						logging.info('Killing the process with pid: {}'.format(reading[0]))
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
-					mysqlErrorHandler(e,db,pi,logging)
+					mysqlErrorHandler_bt(e,db,logging)
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to execute sensor reader script
 			elif data_received == 'e':
 				logging.info("Command to begin a read")
 				try:
@@ -78,49 +111,99 @@ try:
 						logging.info("Starting a new process to read")
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
-					mysqlErrorHandler(e,db,pi,logging)
+					mysqlErrorHandler_bt(e,db,logging)
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to read the historic
 			elif data_received == 'h':
-				logging.info("Command to begin a read")
+				logging.info("Command to read historic")
 				try:
+					logging.info("Setting timeout from socket to {} and setting historic loop flag".format(historic_loop_countdown))
+					count_for_lists = 0
+					historic_loop = True
+					read_loop = False
+					chart_loop = False
+					client_sock.settimeout(historic_loop_countdown)
 					cursorDB.execute ("SELECT * FROM read_historical")
 					reading = cursorDB.fetchall()
-					print reading
 					logging.info("Get all historical from MySQL database")
+					for row in reading:
+						all_historical_data.insert(0,row)	
+					all_historical_data.insert(len(all_historical_data),"finalhistoric\n");
+					all_historical_data.insert(0,"initialhistoric\n");					
+
 				except Exception as e:
 					logging.info("Error trying to connect to access the historical")
-					mysqlErrorHandler(e,db,pi,logging)	
+					mysqlErrorHandler_bt(e,db,logging)
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to delete from historic
+			elif data_received_with_id == "d":
+				logging.info("Command to delete id:{} historic".format(id_read))
+			# --------------------------------------------------------------------------------------------------------------------
+			# Commando to create a chart
+			elif data_received_with_id == "c":
+				logging.info("Command to chart id:{} from historic".format(id_read))
+			# --------------------------------------------------------------------------------------------------------------------	
+
 		except bluetooth.btcommon.BluetoothError as error:
 			#logging.error("Bluetooth Error: {}".format(error))
 			# Timeout catcher
 			x = 1
 
-		try:
-			cursorDB.execute ("SELECT * FROM sensor_data ORDER BY unix DESC LIMIT 1")
-			reading = cursorDB.fetchone()
-			db.commit()
-			
-			data_to_send = "{};{};{}\r\n".format(reading[0],reading[1],reading[2])
+		# -------------------------------------------------------------------------------
+		# loop that send sensor data ----------------------------------------------------
+		if read_loop:
+			try:
+				cursorDB.execute ("SELECT * FROM sensor_data ORDER BY unix DESC LIMIT 1")
+				reading = cursorDB.fetchone()
+				db.commit()
+				
+				data_to_send = "{};{};{}\r\n".format(reading[0],reading[1],reading[2])
 
-		except Exception as e:
-			logging.info("Error trying to read the DB, to send on time data")
-			logging.error("MySQL Error: {}".format(str(e)))
-			logging.warn("Database rollback")
-			db.rollback()
+			except Exception as e:
+				logging.info("Error trying to read the DB, to send on time data")
+				logging.error("MySQL Error: {}".format(str(e)))
+				logging.warn("Database rollback")
+				db.rollback()
 
-		try:
-			client_sock.send(data_to_send)
-		
-		except bluetooth.btcommon.BluetoothError as error:
-			logging.warn("Could not connect: {}; Retrying...".format(error))
-			#server_sock, port = bluetoothConnection()
-			client_sock, client_info = server_sock.accept()
-			client_sock.settimeout(0.9)
-			logging.info("Accepted connection from {}".format(client_info))
-			
+			try:
+				client_sock.send(data_to_send)
+
+			except bluetooth.btcommon.BluetoothError as error:
+				logging.warn("Could not connect: {}; Retrying...".format(error))
+				#server_sock, port = bluetoothConnection()
+				client_sock, client_info = server_sock.accept()
+				client_sock.settimeout(read_loop_countdown)
+				logging.info("Accepted connection from {}".format(client_info))		
+		# -------------------------------------------------------------------------------
+		# loop that send historic data ----------------------------------------------------
+		elif historic_loop:
+			try:
+				if(count_for_lists == 0):
+					client_sock.send(all_historical_data[count_for_lists])
+					count_for_lists=count_for_lists+1
+				elif(count_for_lists==(len(all_historical_data)-1)):
+					client_sock.send(all_historical_data[count_for_lists])
+					count_for_lists = 0
+				else:
+					row = all_historical_data[count_for_lists]
+					client_sock.send("{},{},{},{},{},{}\n".format(row[0],row[1],row[2],row[3],row[4],row[5]))
+					count_for_lists=count_for_lists+1
+			except bluetooth.btcommon.BluetoothError as error:
+				logging.warn("Could not connect: {}; Retrying...".format(error))
+				#server_sock, port = bluetoothConnection()
+				client_sock, client_info = server_sock.accept()
+				client_sock.settimeout(historic_loop_countdown)
+				logging.info("Accepted connection from {}".format(client_info))		
+		# -------------------------------------------------------------------------------	
+		# loop that send chart data ----------------------------------------------------
+		elif chart_loop:
+			x=1
+		# -------------------------------------------------------------------------------	
+		# check if the process are killed
 		if stop:
 			logging.warn('Breaking the loop!')
 			break
-
+		# -------------------------------------------------------------------------------	
 
 except KeyboardInterrupt:
 	logging.warn('Breaking the loop!')

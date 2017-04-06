@@ -116,3 +116,1640 @@ WARNING:root:Bluetooth socket stop advertising
 WARNING:root:Bluetooth client socket close
 WARNING:root:Bluetooth server socket close
 WARNING:root:Finishing the script...UTC:2017-03-22 01:52:36
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:14:17
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-03-24 00:14:27
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:14:29
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 00:15:29
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:19:12
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 00:19:46
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:20:00
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 00:20:38
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:20:39
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 00:20:55
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:38:02
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:40:45
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:43:55
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to receive command at historical loop
+ERROR:root:MySQL Error: timed out
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: 'NoneType' object has no attribute 'stop'
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:46:58
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to receive command at historical loop
+ERROR:root:MySQL Error: timed out
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:48:56
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: must be string or read-only buffer, not tuple
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:51:10
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to receive command at historical loop
+ERROR:root:MySQL Error: timed out
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 00:55:31
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 00:59:22
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 01:05:28
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: name 'cursor' is not defined
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 01:06:23
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 01:07:21
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-24 01:09:03
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-24 01:10:23
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-28 21:46:29
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-28 22:16:12
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: None 
+INFO:root:There is no read to finish...
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (7392L,) 
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (7392L,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (7392L,) 
+INFO:root:Killing the process with pid: 7392
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-28 22:21:02
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-28 22:25:32
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-28 23:12:28
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-29 00:42:11
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-29 00:42:14
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-29 00:46:09
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-29 00:46:13
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-03-29 00:49:41
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-29 00:50:52
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-29 01:12:17
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-29 01:12:18
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (7884L,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (7884L,) 
+INFO:root:Killing the process with pid: 7884
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: (7933L,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (7933L,) 
+INFO:root:Killing the process with pid: 7933
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-29 01:45:21
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-29 23:51:20
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-30 01:24:28
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-30 02:20:27
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-30 02:26:41
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-31 01:51:42
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-31 01:53:36
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-31 01:53:37
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-31 02:00:25
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-31 02:00:27
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-31 02:00:38
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-31 02:00:39
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-03-31 02:00:41
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-03-31 02:00:46
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-03-31 02:17:55
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 22:16:28
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-03 22:34:07
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 22:34:11
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (19091L,) 
+INFO:root:Killing the process with pid: 19091
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-03 22:56:21
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 23:14:03
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-03 23:19:04
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 23:20:03
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-03 23:22:06
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 23:23:42
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-03 23:28:41
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-03 23:32:39
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-04-03 23:33:46
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 01:41:33
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 01:42:13
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 01:54:43
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 02:12:21
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 19:02:51
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-04-04 19:02:57
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 19:03:34
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (1593L,) 
+INFO:root:Killing the process with pid: 1593
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (1618L,) 
+INFO:root:Killing the process with pid: 1618
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 19:10:43
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (2028L,) 
+INFO:root:Killing the process with pid: 2028
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (2053L,) 
+INFO:root:Killing the process with pid: 2053
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 20:53:58
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 20:59:51
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 20:59:52
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 21:05:36
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 21:05:37
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 21:09:33
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 21:09:36
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 22:44:37
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:18:29
+INFO:root:Waiting for connection on RFCOMM channel 2
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 2)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-04 23:31:08
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:33:12
+INFO:root:Waiting for connection on RFCOMM channel 2
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-04-04 23:34:40
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:35:09
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:35:58
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:38:13
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Interrupting script during bluetooth connection acceptance
+WARNING:root:Finishing the script...UTC:2017-04-04 23:38:13
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-04 23:40:42
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-05 22:03:21
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (1467L,) 
+INFO:root:Killing the process with pid: 1467
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to finish the read historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-05 23:53:52
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-05 23:54:11
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-05 23:55:14
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: 'tuple' object has no attribute 'insert'
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-05 23:58:44
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: name 'all_historical_data' is not defined
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-05 23:59:02
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: name 'all_historical_data' is not defined
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:00:14
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: insert() takes exactly 2 arguments (1 given)
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:00:42
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+INFO:root:Error trying to connect to access the historical
+ERROR:root:MySQL Error: insert() takes exactly 2 arguments (1 given)
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:01:14
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:02:15
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:02:17
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:03:47
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:03:51
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:22:21
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:22:22
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:23:45
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:32:04
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:32:27
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:32:46
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:33:18
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:33:34
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:41:42
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:41:44
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:42:28
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 00:42:29
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 00:44:11
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:40:15
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:43:58
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 01:49:47
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:49:48
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 01:52:50
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:52:54
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (11, 'Resource temporarily unavailable'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 01:53:40
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:53:42
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 01:55:30
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:55:31
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.01 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.01 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from MySQL database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.01 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.01 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to kill the read process
+INFO:root:Last read get from MySQL database: (2284L,) 
+INFO:root:Killing the process with pid: 2284
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.01 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: timed out; Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 01:59:44
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-06 01:59:56
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to MySQL database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.1 and setting historic loop flag
+INFO:root:Get all historical from MySQL database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:Bluetooth socket stop advertising
+WARNING:root:Bluetooth client socket close
+WARNING:root:Bluetooth server socket close
+WARNING:root:Finishing the script...UTC:2017-04-06 02:02:29

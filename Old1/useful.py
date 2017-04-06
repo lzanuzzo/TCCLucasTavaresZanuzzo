@@ -14,14 +14,6 @@ def mysqlErrorHandler(e,db,pi,logging):
 	logging.warn('PIGPIO stop')
 	exit()
 
-def mysqlErrorHandler_bt(e,db,logging):
-	logging.error("MySQL Error: %s" % str(e))
-	db.rollback()
-	logging.warn('Database rollback')
-	db.close()
-	logging.warn('Database close connection')		
-	exit()
-
 def bluetoothConnection():
 	server_sock = BluetoothSocket( RFCOMM ) #Constructs a socket for RFCOMM service.
 	server_sock.bind(("",PORT_ANY)) #Server binds the script on host '' to any port.

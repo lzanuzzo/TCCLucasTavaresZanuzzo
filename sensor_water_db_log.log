@@ -259,3 +259,120 @@ WARNING:root:Database rollback
 WARNING:root:Database close connection
 WARNING:root:PIGPIO stop
 WARNING:root:Finishing the script...UTC:2017-04-06 01:58:59
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 01:21:45
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to MySQL database
+INFO:root:Last read get from MySQL database: (60L, 1491443831.0, 1491443939.0, 466.667, datetime.datetime(2017, 4, 5, 22, 57, 11), datetime.datetime(2017, 4, 5, 22, 58, 59), 2284L) 
+INFO:root:New read started!, pid: 61
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-07 01:32:57
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 01:37:36
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (60, 1491443831.0, 1491443939.0, 466.667, u'2017-04-06 01:57:11', u'2017-04-06 01:58:59', 2284) 
+ERROR:root:Error trying to insert the next read row at historical table.
+ERROR:root:SQLite Error: no such function: UNIX_TIMESTAMP
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 01:53:42
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (60, 1491443831.0, 1491443939.0, 466.667, u'2017-04-06 01:57:11', u'2017-04-06 01:58:59', 2284) 
+ERROR:root:Error trying to insert the next read row at historical table.
+ERROR:root:SQLite Error: no such function: NOW
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 02:02:11
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (60, 1491443831.0, 1491443939.0, 466.667, u'2017-04-06 01:57:11', u'2017-04-06 01:58:59', 2284) 
+ERROR:root:Error trying to insert the next read row at historical table.
+ERROR:root:SQLite Error: NOT NULL constraint failed: read_historical.id
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 02:18:06
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (60, 1491443831.0, 1491443939.0, 466.667, u'2017-04-06 01:57:11', u'2017-04-06 01:58:59', 2284) 
+ERROR:root:Error trying to insert the next read row at historical table.
+ERROR:root:SQLite Error: NOT NULL constraint failed: read_historical.id
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 02:22:58
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (60, 1491443831.0, 1491443939.0, 466.667, u'2017-04-06 01:57:11', u'2017-04-06 01:58:59', 2284) 
+INFO:root:New read started!, pid: 61
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-07 02:23:23
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 02:25:02
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (61, 1491531778.0, 1491531803.0, 1320.0, u'2017-04-07 02:22:58', u'2017-04-07 02:23:23', 2883) 
+INFO:root:New read started!, pid: 62
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-07 02:25:46
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 02:28:12
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (62, 1491531902.0, 1491531946.0, 346.666666667, u'2017-04-07 02:25:02', u'2017-04-07 02:25:46', 2905) 
+INFO:root:New read started!, pid: 63
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-07 02:28:45
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 10:58:52
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (63, 1491532092.0, 1491532125.0, 740.0, u'2017-04-07 02:28:12', u'2017-04-07 02:28:45', 1327) 
+INFO:root:New read started!, pid: 64
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-07 11:25:05
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-07 11:25:09
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (64, 1491562732.0, 1491564305.0, 377.777777778, u'2017-04-07 10:58:52', u'2017-04-07 11:25:05', 1334) 
+INFO:root:New read started!, pid: 65
+INFO:root:Starting the loop...

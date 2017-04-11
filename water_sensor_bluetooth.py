@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 import bluetooth
 from bluetooth import *
-import MySQLdb
+import sqlite3
 from useful import *
 import signal
 import logging
@@ -33,12 +33,12 @@ logging.info("Accepted connection from {}".format(client_info))
 # ------------------------------------------------------
 # Conexao no banco
 try:
-	db = MySQLdb.connect("localhost", "wiki", "eeyrfxfe", "WATER_SENSOR")
+	db = sqlite3.connect("WATER_SENSOR.db")
 	cursorDB = db.cursor()
 except Exception as e:
 	logging.error('Error trying to connect to database')
-	mysqlErrorHandler_bt(e,db,logging)
-logging.info("Connected to MySQL database")
+	sqliteErrorHandler_bt(e,db,logging)
+logging.info("Connected to SQLite3 database")
 # --------------------------------------------------------
 #Funcao para poder dar kill e finalizar corretamente o script
 stop = False
@@ -53,7 +53,7 @@ historic_loop 	= False;
 chart_loop		= False;
 read_loop 		= True;
 # Countdown to receive data for each type of stream
-historic_loop_countdown = 0.1
+historic_loop_countdown = 0.05
 chart_loop_countdown 	= 0.1
 read_loop_countdown 	= 0.9
 # Initialize the list with historical and chart data
@@ -89,7 +89,7 @@ try:
 				try:
 					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
 					reading = cursorDB.fetchone()
-					logging.info("Last read get from MySQL database: {} ".format(reading))
+					logging.info("Last read get from sqlite database: {} ".format(reading))
 					if reading is None:
 						logging.info("There is no read to finish...")
 					else:
@@ -97,7 +97,7 @@ try:
 						logging.info('Killing the process with pid: {}'.format(reading[0]))
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
-					mysqlErrorHandler_bt(e,db,logging)
+					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------
 			# Commando to execute sensor reader script
 			elif data_received == 'e':
@@ -105,13 +105,13 @@ try:
 				try:
 					cursorDB.execute ("SELECT pid FROM read_historical WHERE unix_end IS NULL ORDER BY unix_start DESC LIMIT 1")
 					reading = cursorDB.fetchone()
-					logging.info("Last read get from MySQL database: {} ".format(reading))
+					logging.info("Last read get from sqlite database: {} ".format(reading))
 					if reading is None:
 						os.system("sudo nice -20 python sensor_water_db.py > log_exec.txt &")
 						logging.info("Starting a new process to read")
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
-					mysqlErrorHandler_bt(e,db,logging)
+					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------
 			# Commando to read the historic
 			elif data_received == 'h':
@@ -125,25 +125,56 @@ try:
 					client_sock.settimeout(historic_loop_countdown)
 					cursorDB.execute ("SELECT * FROM read_historical")
 					reading = cursorDB.fetchall()
-					logging.info("Get all historical from MySQL database")
+					logging.info("Get all historical from sqlite database")
 					for row in reading:
 						all_historical_data.insert(0,row)	
 					all_historical_data.insert(len(all_historical_data),"finalhistoric\n");
 					all_historical_data.insert(0,"initialhistoric\n");					
-
 				except Exception as e:
 					logging.info("Error trying to connect to access the historical")
-					mysqlErrorHandler_bt(e,db,logging)
+					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------
 			# Commando to delete from historic
 			elif data_received_with_id == "d":
 				logging.info("Command to delete id:{} historic".format(id_read))
+				try:
+					cursorDB.execute ("""
+					DELETE 
+					FROM sensor_data 
+					WHERE 
+					unix BETWEEN
+					(SELECT unix_start FROM read_historical WHERE id={})
+					AND
+					(SELECT unix_end FROM read_historical WHERE id={});
+					""".format(id_read,id_read))
+					db.commit()
+					if cursorDB.rowcount > 0:
+						cursorDB.execute ("DELETE FROM read_historical WHERE id={} LIMIT 1".format(id_read))
+						db.commit()
+						if cursorDB.rowcount > 0:
+							cursorDB.execute ("SELECT * FROM read_historical")
+							reading = cursorDB.fetchall()
+							logging.info("Get all historical from sqlite database")
+							for row in reading:
+								all_historical_data.insert(0,row)	
+							all_historical_data.insert(len(all_historical_data),"finalhistoric\n");
+							all_historical_data.insert(0,"initialhistoric\n");	
+					
+				except Exception as e:
+					logging.info("Error trying to connect to delete some line from historical")
+					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------
 			# Commando to create a chart
 			elif data_received_with_id == "c":
 				logging.info("Command to chart id:{} from historic".format(id_read))
 			# --------------------------------------------------------------------------------------------------------------------	
-
+			# Commando to shutdown raspberry
+			elif data_received == "s":
+				logging.info("Command to shutdown raspberry pi")
+				#os.system("sudo shutdown -h now")
+				print "sudo shutdown -h now"
+				break
+			# --------------------------------------------------------------------------------------------------------------------	
 		except bluetooth.btcommon.BluetoothError as error:
 			#logging.error("Bluetooth Error: {}".format(error))
 			# Timeout catcher
@@ -161,7 +192,7 @@ try:
 
 			except Exception as e:
 				logging.info("Error trying to read the DB, to send on time data")
-				logging.error("MySQL Error: {}".format(str(e)))
+				logging.error("sqlite Error: {}".format(str(e)))
 				logging.warn("Database rollback")
 				db.rollback()
 
@@ -178,16 +209,19 @@ try:
 		# loop that send historic data ----------------------------------------------------
 		elif historic_loop:
 			try:
-				if(count_for_lists == 0):
-					client_sock.send(all_historical_data[count_for_lists])
-					count_for_lists=count_for_lists+1
-				elif(count_for_lists==(len(all_historical_data)-1)):
-					client_sock.send(all_historical_data[count_for_lists])
-					count_for_lists = 0
+
+				row = all_historical_data[count_for_lists]
+				if row == "initialhistoric\n" or row == "finalhistoric\n":
+					client_sock.send(row)
 				else:
-					row = all_historical_data[count_for_lists]
 					client_sock.send("{},{},{},{},{},{}\n".format(row[0],row[1],row[2],row[3],row[4],row[5]))
+
+				if count_for_lists==(len(all_historical_data)-1):
+					count_for_lists = 0
+				else:	
 					count_for_lists=count_for_lists+1
+
+
 			except bluetooth.btcommon.BluetoothError as error:
 				logging.warn("Could not connect: {}; Retrying...".format(error))
 				#server_sock, port = bluetoothConnection()

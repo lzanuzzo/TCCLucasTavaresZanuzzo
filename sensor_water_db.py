@@ -6,7 +6,7 @@ from datetime import datetime
 import sys
 import dateutil.relativedelta
 import os
-import MySQLdb
+import sqlite3
 import signal
 import logging
 from useful import *
@@ -34,12 +34,12 @@ logging.info('PIGPIO configured')
 # ------------------------------------------------------
 # Conexao no banco
 try:
-	db = MySQLdb.connect("localhost", "wiki", "eeyrfxfe", "WATER_SENSOR")
+	db = sqlite3.connect("WATER_SENSOR.db")
 	cursorDB = db.cursor()
 except Exception as e:
 	logging.error('Error trying to connect to database')
-	mysqlErrorHandler(e,db,pi,logging)
-logging.info("Connected to MySQL database")
+	sqliteErrorHandler(e,db,pi,logging)
+logging.info("Connected to SQLite3 database")
 # ------------------------------------------------------
 # Verifica a ultima leitura. se a tabela está vazia ou se a leitura ainda nao acabou
 try:
@@ -48,21 +48,22 @@ try:
 	print reading
 except Exception as e:
 	logging.error("Error trying to connect to acces the last line at historical")
-	mysqlErrorHandler(e,db,pi,logging)
-logging.info("Last read get from MySQL database: {} ".format(reading))
+	sqliteErrorHandler(e,db,pi,logging)
+logging.info("Last read get from SQLite database: {} ".format(reading))
 # ------------------------------------------------------
 # Situacao onde nao existe nada no historico
 if reading is None:
 	total_liters = 0
 	try:
-		cursorDB.execute("INSERT INTO read_historical (unix_start,start_date,liters,pid) values (UNIX_TIMESTAMP(),NOW(),0,{})".format(pid))	
+		timestamp = int(time.time())
+		cursorDB.execute("INSERT INTO read_historical (unix_start,start_date,liters,pid) values ({},datetime(),0,{})".format(timestamp,pid))	
 		db.commit()
 		cursorDB.execute("SELECT id FROM read_historical WHERE 1 ORDER BY id DESC LIMIT 1")
 		reading = cursorDB.fetchone()
 		atual_read_id = reading[0]
 	except Exception as e:
 		logging.error("Error trying to insert the first row at historical table.")
-		mysqlErrorHandler(e,db,pi,logging)
+		sqliteErrorHandler(e,db,pi,logging)
 	logging.info("First read at historical insert, id: {}".format(atual_read_id))
 # ------------------------------------------------------
 # Situacao onde existe uma leitura inacabada
@@ -78,21 +79,22 @@ elif reading is not None and reading[2] is None:
 		else: total_liters = 0
 	except Exception as e:
 		logging.error("Error trying to read last amount of liters read")
-		mysqlErrorHandler(e,db,pi,logging)
+		sqliteErrorHandler(e,db,pi,logging)
 	logging.info("Not finished read at historical, continue reading, read id: {}".format(atual_read_id))
 # ------------------------------------------------------
 # Situacao onde existe uma leitura finalizada
 elif reading[2] is not None and reading[5] is not None:
 	total_liters = 0 
 	try:
-		cursorDB.execute("INSERT INTO read_historical (unix_start,start_date,liters,pid) values (UNIX_TIMESTAMP(),NOW(),0,{})".format(pid))	
+		timestamp = int(time.time())
+		cursorDB.execute("INSERT INTO read_historical (unix_start,start_date,liters,pid) values ({},datetime(),0,{})".format(timestamp,pid))	
 		db.commit()
 		cursorDB.execute("SELECT id FROM read_historical WHERE 1 ORDER BY id DESC LIMIT 1")
 		reading = cursorDB.fetchone()
 		atual_read_id = reading[0]
 	except Exception as e:
 		logging.error("Error trying to insert the next read row at historical table.")
-		mysqlErrorHandler(e,db,pi,logging)
+		sqliteErrorHandler(e,db,pi,logging)
 	logging.info("New read started!, pid: {}".format(atual_read_id))
 # --------------------------------------------------------
 #Funcao para poder dar kill e finalizar corretamente o script
@@ -133,11 +135,12 @@ try:
 			total_liters = ml_in_pulse*count + total_liters
 
 			try:
-				cursorDB.execute("INSERT INTO sensor_data values (UNIX_TIMESTAMP(),{},{})".format(flow,total_liters));	
+				timestamp = int(time.time())
+				cursorDB.execute("INSERT INTO sensor_data values ({},{},{})".format(timestamp,flow,total_liters));	
 				db.commit()
 			except Exception as e:
 				logging.error("Error trying to insert sensor read data")
-				mysqlErrorHandler(e,db,pi,logging)
+				sqliteErrorHandler(e,db,pi,logging)
 			
 			count = 0
 			tdelta = 0
@@ -153,11 +156,12 @@ except KeyboardInterrupt:
 # ---------------------------------------------------------
 # Salvando no banco o tanto de litros e a data desse script
 try:
-	cursorDB.execute("UPDATE read_historical SET unix_end=UNIX_TIMESTAMP(), end_date=NOW(), liters={} WHERE id={} ".format(total_liters,atual_read_id));	
+	timestamp = int(time.time())
+	cursorDB.execute("UPDATE read_historical SET unix_end={}, end_date=datetime(), liters={} WHERE id={} ".format(timestamp,total_liters,atual_read_id));	
 	db.commit()
 except Exception as e:
 	logging.error("Error trying to finish the read")
-	mysqlErrorHandler(e,db,pi,logging)
+	sqliteErrorHandler(e,db,pi,logging)
 # ----------------------------------------------------------
 db.rollback()
 logging.warn('Database rollback')

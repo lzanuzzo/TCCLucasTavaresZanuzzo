@@ -4,8 +4,8 @@ import bluetooth
 import logging
 from bluetooth import *
 
-def mysqlErrorHandler(e,db,pi,logging):
-	logging.error("MySQL Error: %s" % str(e))
+def sqliteErrorHandler(e,db,pi,logging):
+	logging.error("SQLite Error: %s" % str(e))
 	db.rollback()
 	logging.warn('Database rollback')
 	db.close()
@@ -14,8 +14,8 @@ def mysqlErrorHandler(e,db,pi,logging):
 	logging.warn('PIGPIO stop')
 	exit()
 
-def mysqlErrorHandler_bt(e,db,logging):
-	logging.error("MySQL Error: %s" % str(e))
+def sqliteErrorHandler_bt(e,db,logging):
+	logging.error("SQLite Error: %s" % str(e))
 	db.rollback()
 	logging.warn('Database rollback')
 	db.close()

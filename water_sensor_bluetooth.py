@@ -95,6 +95,7 @@ try:
 					else:
 						os.system("sudo kill -10 {}".format(reading[0]))
 						logging.info('Killing the process with pid: {}'.format(reading[0]))
+
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
 					sqliteErrorHandler_bt(e,db,logging)
@@ -109,6 +110,7 @@ try:
 					if reading is None:
 						os.system("sudo nice -20 python sensor_water_db.py > log_exec.txt &")
 						logging.info("Starting a new process to read")
+
 				except Exception as e:
 					logging.info("Error trying to connect to access the last line at historical")
 					sqliteErrorHandler_bt(e,db,logging)
@@ -117,6 +119,7 @@ try:
 			elif data_received == 'h':
 				logging.info("Command to read historic")
 				try:
+					all_historical_data = []
 					logging.info("Setting timeout from socket to {} and setting historic loop flag".format(historic_loop_countdown))
 					count_for_lists = 0
 					historic_loop = True
@@ -129,7 +132,8 @@ try:
 					for row in reading:
 						all_historical_data.insert(0,row)	
 					all_historical_data.insert(len(all_historical_data),"finalhistoric\n");
-					all_historical_data.insert(0,"initialhistoric\n");					
+					all_historical_data.insert(0,"initialhistoric\n");		
+
 				except Exception as e:
 					logging.info("Error trying to connect to access the historical")
 					sqliteErrorHandler_bt(e,db,logging)
@@ -165,8 +169,34 @@ try:
 					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------
 			# Commando to create a chart
-			elif data_received_with_id == "c":
+			elif data_received_with_id == "c":	
 				logging.info("Command to chart id:{} from historic".format(id_read))
+				try:
+					logging.info("Setting timeout from socket to {} and setting chart loop flag".format(chart_loop_countdown))
+					all_chart_data = []
+					count_for_lists = 0
+					historic_loop = False
+					read_loop = False
+					chart_loop = True
+					client_sock.settimeout(chart_loop_countdown)
+					cursorDB.execute("""
+					SELECT *,{} 
+					FROM sensor_data 
+					WHERE 
+					unix BETWEEN 
+					(SELECT unix_start FROM read_historical WHERE id={}) 
+					AND 
+					(SELECT unix_end FROM read_historical WHERE id={})
+					""".format(id_read,id_read,id_read))
+					reading = cursorDB.fetchall()					
+					logging.info("Get all chart from sqlite database")
+					for row in reading:
+						all_chart_data.insert(0,row)			
+					all_chart_data.insert(len(all_chart_data),"fin,{}\n".format(id_read));
+					all_chart_data.insert(0,"ini,{}\n".format(id_read));
+				except Exception as e:
+					logging.info("Error trying to connect to get some chart data")
+					sqliteErrorHandler_bt(e,db,logging)
 			# --------------------------------------------------------------------------------------------------------------------	
 			# Commando to shutdown raspberry
 			elif data_received == "s":
@@ -221,7 +251,6 @@ try:
 				else:	
 					count_for_lists=count_for_lists+1
 
-
 			except bluetooth.btcommon.BluetoothError as error:
 				logging.warn("Could not connect: {}; Retrying...".format(error))
 				#server_sock, port = bluetoothConnection()
@@ -231,7 +260,26 @@ try:
 		# -------------------------------------------------------------------------------	
 		# loop that send chart data ----------------------------------------------------
 		elif chart_loop:
-			x=1
+			try:
+				row = all_chart_data[count_for_lists]
+
+				if "ini" in row or "fin" in row:
+					client_sock.send(row)
+				else:
+					client_sock.send("{},{},{},{}\n".format(row[0],row[1],row[2],row[3]))
+
+				if count_for_lists==(len(all_chart_data)-1):
+					count_for_lists = 0
+				else:	
+					count_for_lists=count_for_lists+1
+
+			except bluetooth.btcommon.BluetoothError as error:
+				logging.warn("Could not connect: {}; Retrying...".format(error))
+				#server_sock, port = bluetoothConnection()
+				client_sock, client_info = server_sock.accept()
+				client_sock.settimeout(chart_loop_countdown)
+				logging.info("Accepted connection from {}".format(client_info))	
+
 		# -------------------------------------------------------------------------------	
 		# check if the process are killed
 		if stop:

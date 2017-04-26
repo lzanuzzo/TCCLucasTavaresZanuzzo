@@ -389,3 +389,16 @@ WARNING:root:Database rollback
 WARNING:root:Database close connection
 WARNING:root:PIGPIO stop
 WARNING:root:Finishing the script...UTC:2017-04-11 23:01:14
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-14 18:03:00
+INFO:root:Flow sensor at PIN: 2 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (66, 1491951640.0, 1491951674.0, 613.333333333, u'2017-04-11 23:00:40', u'2017-04-11 23:01:14', 9999) 
+INFO:root:New read started!, pid: 67
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-04-14 18:06:29

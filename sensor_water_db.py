@@ -116,14 +116,14 @@ callback = pi.callback(FLOW_SENSOR, pigpio.RISING_EDGE, callback_func)
 # The count may be reset to zero by calling the reset_tally function. 
 # --------------------------------------------------------
 # Condicoes iniciais do sistema e calibracoes
-ml_in_pulse = float(1000)/450
+ml_in_pulse = float(1000)/420
 count = 0
 start_time = time.time()
 # --------------------------------------------------------
 logging.info("Starting the loop...")
 try:
 	while True:
-		# Pulsos por litro: 450
+		# Pulsos por litro: 420
 		# Frequência (Hz) = 7,5*Fluxo(L/min)
 		# Fluxo = Freq(Hz)/7,5
 		tdelta = (time.time()-start_time)

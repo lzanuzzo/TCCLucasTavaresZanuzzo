@@ -54,7 +54,7 @@ chart_loop		= False;
 read_loop 		= True;
 # Countdown to receive data for each type of stream
 historic_loop_countdown = 0.05
-chart_loop_countdown 	= 0.1
+chart_loop_countdown 	= 0.05
 read_loop_countdown 	= 0.9
 # Initialize the list with historical and chart data
 all_historical_data = []
@@ -179,15 +179,37 @@ try:
 					read_loop = False
 					chart_loop = True
 					client_sock.settimeout(chart_loop_countdown)
+
 					cursorDB.execute("""
-					SELECT *,{} 
-					FROM sensor_data 
-					WHERE 
-					unix BETWEEN 
-					(SELECT unix_start FROM read_historical WHERE id={}) 
-					AND 
-					(SELECT unix_end FROM read_historical WHERE id={})
-					""".format(id_read,id_read,id_read))
+						SELECT 
+							COUNT(*)
+						FROM sensor_data  
+						WHERE unix BETWEEN 
+						(SELECT unix_start FROM read_historical WHERE id={}) 
+						AND 
+						(SELECT unix_end FROM read_historical WHERE id={});
+					""".format(id_read,id_read))
+					row_number = cursorDB.fetchone()
+					logging.info("Find {} rows for this chart".format(row_number))
+					if row_number[0] > 100 :
+						row_count_factor = row_number[0]//100
+					else:
+						row_count_factor = 1
+					logging.info("The division factor will be: {}".format(row_count_factor))
+					cursorDB.execute("""
+						SELECT 
+							d.*,
+							{},
+							(SELECT COUNT(*) FROM sensor_data b WHERE d.unix >= b.unix) AS count 
+						FROM sensor_data d 
+						WHERE d.unix BETWEEN 
+						(SELECT unix_start FROM read_historical WHERE id={}) 
+						AND 
+						(SELECT unix_end FROM read_historical WHERE id={}) 
+						AND count%{} = 0
+						ORDER BY d.unix DESC
+						;
+					""".format(id_read,id_read,id_read,row_count_factor))
 					reading = cursorDB.fetchall()					
 					logging.info("Get all chart from sqlite database")
 					for row in reading:
@@ -201,8 +223,8 @@ try:
 			# Commando to shutdown raspberry
 			elif data_received == "s":
 				logging.info("Command to shutdown raspberry pi")
-				#os.system("sudo shutdown -h now")
-				print "sudo shutdown -h now"
+				os.system("sudo shutdown -h now")
+				#print "sudo shutdown -h now"
 				break
 			# --------------------------------------------------------------------------------------------------------------------	
 		except bluetooth.btcommon.BluetoothError as error:

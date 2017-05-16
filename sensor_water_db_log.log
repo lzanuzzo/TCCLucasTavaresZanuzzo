@@ -402,3 +402,63 @@ WARNING:root:Database rollback
 WARNING:root:Database close connection
 WARNING:root:PIGPIO stop
 WARNING:root:Finishing the script...UTC:2017-04-14 18:06:29
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-02 18:52:21
+INFO:root:Flow sensor at PIN: 14 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (67, 1492192980.0, 1492193189.0, 1006.66666667, u'2017-04-14 18:03:00', u'2017-04-14 18:06:29', 1742) 
+INFO:root:New read started!, pid: 68
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-05-02 19:08:37
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-02 22:16:24
+INFO:root:Flow sensor at PIN: 14 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (68, 1493751141.0, 1493752117.0, 25607.1428571, u'2017-05-02 18:52:21', u'2017-05-02 19:08:37', 1972) 
+INFO:root:New read started!, pid: 69
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-05-02 22:17:31
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-02 22:19:48
+INFO:root:Flow sensor at PIN: 14 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (69, 1493763384.0, 1493763451.0, 1445.01278772, u'2017-05-02 22:16:24', u'2017-05-02 22:17:31', 2573) 
+INFO:root:New read started!, pid: 70
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-05-02 22:36:14
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 22:08:59
+INFO:root:Flow sensor at PIN: 14 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (70, 1493763588.0, 1493764574.0, 29593.3503836, u'2017-05-02 22:19:48', u'2017-05-02 22:36:14', 2628) 
+INFO:root:New read started!, pid: 71
+INFO:root:Starting the loop...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 22:39:18
+INFO:root:Flow sensor at PIN: 14 
+INFO:root:PIGPIO configured
+INFO:root:Connected to SQLite3 database
+INFO:root:Last read get from SQLite database: (70, 1493763588.0, 1493764574.0, 29593.3503836, u'2017-05-02 22:19:48', u'2017-05-02 22:36:14', 2628) 
+INFO:root:New read started!, pid: 72
+INFO:root:Starting the loop...
+WARNING:root:Breaking the loop!
+WARNING:root:Database rollback
+WARNING:root:Database close connection
+WARNING:root:PIGPIO stop
+WARNING:root:Finishing the script...UTC:2017-05-04 00:39:47

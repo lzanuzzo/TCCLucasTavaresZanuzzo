@@ -18,7 +18,7 @@ logging.info('Starting the script in UTC: '+datetime.utcnow().strftime('%Y-%m-%d
 pid = os.getpid()
 # -----------------------------------------------------
 # Pino do sinal do sensor
-FLOW_SENSOR = 2
+FLOW_SENSOR = 14
 logging.info("Flow sensor at PIN: {} ".format(FLOW_SENSOR))
 # ------------------------------------------------------
 # Config da biblioteca dos GPIO
@@ -116,7 +116,7 @@ callback = pi.callback(FLOW_SENSOR, pigpio.RISING_EDGE, callback_func)
 # The count may be reset to zero by calling the reset_tally function. 
 # --------------------------------------------------------
 # Condicoes iniciais do sistema e calibracoes
-ml_in_pulse = float(1000)/420
+ml_in_pulse = float(1000)/391
 count = 0
 start_time = time.time()
 # --------------------------------------------------------

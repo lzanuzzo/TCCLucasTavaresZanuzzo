@@ -10,7 +10,7 @@ logging.info('------------------------------------------------------------------
 logging.info('Starting the script in UTC: '+datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
 # -----------------------------------------------------
 # Pino do sinal do sensor
-FLOW_SENSOR = 2
+FLOW_SENSOR = 14
 logging.info("Flow sensor at PIN: {} ".format(FLOW_SENSOR))
 # ------------------------------------------------------
 # Config da biblioteca dos GPIO

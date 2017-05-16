@@ -5339,3 +5339,795 @@ INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
 INFO:root:Command to begin the read loop
 INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
 WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-30 14:44:34
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:67 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (205,) rows for this chart
+INFO:root:The division factor will be: 2
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:66 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (33,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:63 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (32,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to shutdown raspberry pi
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-04-30 20:48:13
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1972,) 
+INFO:root:Killing the process with pid: 1972
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:68 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (957,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:68 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (957,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:68 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (957,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: None 
+INFO:root:Starting a new process to read
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (2573,) 
+INFO:root:Killing the process with pid: 2573
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:69 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (66,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (2628,) 
+INFO:root:Killing the process with pid: 2628
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:69 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (66,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to shutdown raspberry pi
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 00:17:08
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:68 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (957,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to shutdown raspberry pi
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 21:58:56
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: None 
+INFO:root:Starting a new process to read
+                                                                                                                                                                                                                                                                                                                                         INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 21:59:00
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Killing the process with pid: 1411
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Killing the process with pid: 1411
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:71 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (0,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to delete id:71 historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:69 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (66,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Killing the process with pid: 1411
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1411,) 
+INFO:root:Killing the process with pid: 1411
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:71 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (0,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to delete id:71 historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: (1411,) 
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to delete id:71 historic
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: (1411,) 
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to shutdown raspberry pi
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-03 22:18:57
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to delete id:71 historic
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: None 
+INFO:root:There is no read to finish...
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+INFO:root:Command to begin a read
+INFO:root:Last read get from sqlite database: None 
+INFO:root:Starting a new process to read
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to kill the read process
+INFO:root:Last read get from sqlite database: (1538,) 
+INFO:root:Killing the process with pid: 1538
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:----------------------------------------------------------------------------
+INFO:root:Starting the script in UTC: 2017-05-15 21:12:48
+INFO:root:Waiting for connection on RFCOMM channel 1
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Connected to SQLite3 database
+INFO:root:Starting the loop...
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:69 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (66,) rows for this chart
+INFO:root:The division factor will be: 1
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: (104, 'Connection reset by peer'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to begin the read loop
+INFO:root:Setting timeout from socket to 0.9 and setting read loop flag
+WARNING:root:Could not connect: (107, 'Transport endpoint is not connected'); Retrying...
+INFO:root:Accepted connection from ('88:79:7E:D0:76:EB', 1)
+INFO:root:Command to read historic
+INFO:root:Setting timeout from socket to 0.05 and setting historic loop flag
+INFO:root:Get all historical from sqlite database
+INFO:root:Command to chart id:72 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (7118,) rows for this chart
+INFO:root:The division factor will be: 71
+INFO:root:Get all chart from sqlite database
+INFO:root:Command to chart id:70 from historic
+INFO:root:Setting timeout from socket to 0.05 and setting chart loop flag
+INFO:root:Find (970,) rows for this chart
+INFO:root:The division factor will be: 9
+INFO:root:Get all chart from sqlite database
+WARNING:root:Could not connect: timed out; Retrying...
